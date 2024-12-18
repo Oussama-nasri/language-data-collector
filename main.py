@@ -1,45 +1,27 @@
-from auto_login import *
-from automate import *
+from login import *
 
 
 if __name__ == "__main__":
+    user_name = "khmais"
+    password = "poussword"
     number_emails = 1
-    email = requests.get("https://www.1secmail.com/api/v1/?action=genRandomMailbox&count={}".format(number_emails)).text
-    
-    email_list = str_to_list(email)
-    for email in email_list:
-        login_domain_tuple = split_email(email)
-        
-        print(email)
-        
-        
 
-        selenium,chrome_driver = initiate_automator()
+    selenium,chrome_driver = initiate_automator()
 
-        selenium.open_login_page()
+    #login(selenium,chrome_driver,number_emails,user_name,password)
+    selenium.open_text_to_speech_page()
+    selenium.youtube_to_text()
 
-        selenium.log_in(chrome_driver,"salit",email,"pass")
+    #selenium.close_browser(chrome_driver)
+    '''
+    #test
+    email = "07g94u2q4k@rteet.com"
+    print(email)
+    login_domain_tuple = split_email(email)
+    response = retrieve_mail(login_domain_tuple)
+    print(response)
 
-        response = retrieve_mail(login_domain_tuple)
-        while response is None:
-            print("Waiting for email...")
-            time.sleep(1)  # Wait for 1 second before checking again
-            response = retrieve_mail(login_domain_tuple)
-        print("Response : \n",response)
-
-        verification_code = retrieve_code(response)
-        print("verification_code : \n",verification_code)
-        selenium.verify(chrome_driver,verification_code)
-
-        selenium.close_browser(chrome_driver)
+    verification_code = retrieve_code(response)
+    print(verification_code)
         '''
-        #test
-        print(email)
-        login_domain_tuple = split_email(email)
-        response = retrieve_mail(login_domain_tuple)
-        print(response)
-
-        verification_code = retrieve_code(response)
-        print(verification_code)
         
-        '''

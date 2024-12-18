@@ -2,13 +2,6 @@ import requests
 import re
 
 
-number_emails = 10
-
-#print(requests.get("https://www.1secmail.com/api/v1/?action=genRandomMailbox&count={}".format(number_emails)).text)
-
-#we need to benchmark the average wait time
-#print(requests.get("https://www.1secmail.com/api/v1/?action=getMessages&login=26fah1o7kd&domain=rteet.com").text)
-
 def split_email(email):
     pattern = r"([^@]+)@(.+)"
     match = re.match(pattern, email)
@@ -38,7 +31,6 @@ def str_to_list(string):
 def retrieve_code(response):
     pattern = r'(?<=Verify Your Account - )\d{4}(?= - Voiser.net)'
 
-
     match = re.search(pattern, response)
 
     if match:
@@ -49,10 +41,4 @@ def retrieve_code(response):
 
 
 if __name__ == "__main__":
-    number_emails = 1
-    email = requests.get("https://www.1secmail.com/api/v1/?action=genRandomMailbox&count={}".format(number_emails)).text
-    email_list = str_to_list(email)
-    for email in email_list:
-        login_domain_tuple = split_email(email)
-        response = retrieve_mail(login_domain_tuple)
-        print(response)
+    pass
