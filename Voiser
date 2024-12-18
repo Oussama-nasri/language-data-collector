@@ -1,0 +1,136 @@
+2024-12-18 01:07:08,958 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:119] - 
+login-------------
+ - [10124:4392]
+2024-12-18 01:16:26,086 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [8088:6464]
+2024-12-18 01:16:26,171 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:122] - 
+loginnnnnnn-------------
+ - [8088:6464]
+2024-12-18 01:17:02,979 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [2744:11620]
+2024-12-18 01:17:03,068 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:122] - 
+loginnnnnnn-------------
+ - [2744:11620]
+2024-12-18 01:17:51,646 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [12444:7456]
+2024-12-18 01:17:56,715 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:123] - 
+loginnnnnnn-------------
+ - [12444:7456]
+2024-12-18 01:18:26,104 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [7328:8072]
+2024-12-18 01:18:31,175 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:123] - 
+loginnnnnnn-------------
+ - [7328:8072]
+2024-12-18 01:29:02,246 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [13004:16052]
+2024-12-18 01:29:08,327 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:124] - 
+loginnnnnnn-------------
+ - [13004:16052]
+2024-12-18 01:30:01,618 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [17496:6024]
+2024-12-18 01:30:07,705 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:124] - 
+loginnnnnnn-------------
+ - [17496:6024]
+2024-12-18 01:30:43,421 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [11896:18384]
+2024-12-18 01:30:49,514 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:124] - 
+loginnnnnnn-------------
+ - [11896:18384]
+2024-12-18 01:31:07,894 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:152] - DONEEEEEEE - [11896:18384]
+2024-12-18 01:34:18,031 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [12536:17564]
+2024-12-18 01:34:24,113 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:124] - 
+loginnnnnnn-------------
+ - [12536:17564]
+2024-12-18 01:34:42,523 - __main__ - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:152] - DONEEEEEEE - [12536:17564]
+2024-12-18 01:35:52,257 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [14440:15240]
+2024-12-18 01:35:58,344 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\automate.py:124] - 
+loginnnnnnn-------------
+ - [14440:15240]
+2024-12-18 01:36:16,783 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\automate.py:152] - DONEEEEEEE - [14440:15240]
+2024-12-18 01:38:43,628 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:12] - [] - [11572:2720]
+2024-12-18 01:38:43,629 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:13] - rboep87rigqv@rteet.com - [11572:2720]
+2024-12-18 01:42:56,528 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:12] - [] - [10136:18304]
+2024-12-18 01:42:56,529 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:13] - a1ixy4y8tru@dpptd.com - [10136:18304]
+2024-12-18 01:45:55,413 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:28] - [] - [17744:2016]
+2024-12-18 01:47:12,016 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:28] - [] - [17148:7936]
+2024-12-18 01:47:30,377 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [17148:7936]
+2024-12-18 01:47:36,461 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\automate.py:124] - 
+loginnnnnnn-------------
+ - [17148:7936]
+2024-12-18 01:47:54,879 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\automate.py:152] - DONEEEEEEE - [17148:7936]
+2024-12-18 01:48:08,732 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:28] - [{"id":1360713323,"from":"bilgi@voiser.net","subject":"Voiser - Verify Your Account - 2333 - Voiser.net","date":"2024-12-18 00:47:50"}] - [14384:13008]
+2024-12-18 01:50:05,053 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:28] - [ - [15836:7824]
+2024-12-18 01:50:41,023 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:28] - <class 'str'> - [14376:3636]
+2024-12-18 01:50:49,944 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:28] - [{"id":1360713323,"from":"bilgi@voiser.net","subject":"Voiser - Verify Your Account - 2333 - Voiser.net","date":"2024-12-18 00:47:50"}] - [10360:6168]
+2024-12-18 01:53:29,350 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:28] - [{"id":1360713323,"from":"bilgi@voiser.net","subject":"Voiser - Verify Your Account - 2333 - Voiser.net","date":"2024-12-18 00:47:50"}] - [11560:15436]
+2024-12-18 01:55:29,322 - automate - [INFO] [c:\Users\Administrator\Desktop\voiser-proj\main.py:28] - [{"id":1360713323,"from":"bilgi@voiser.net","subject":"Voiser - Verify Your Account - 2333 - Voiser.net","date":"2024-12-18 00:47:50"}] - [12220:3116]
+2024-12-18 02:08:34,295 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:13] - [] - [6304:10092]
+2024-12-18 02:08:34,296 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:14] - d9mt61c@dpptd.com - [6304:10092]
+2024-12-18 02:09:13,628 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:13] - [] - [17636:12252]
+2024-12-18 02:09:13,629 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:14] - dhjnmogvcw@rteet.com - [17636:12252]
+2024-12-18 02:09:31,095 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [17636:12252]
+2024-12-18 02:09:37,199 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:124] - 
+loginnnnnnn-------------
+ - [17636:12252]
+2024-12-18 02:09:55,650 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:153] - DONEEEEEEE - [17636:12252]
+2024-12-18 02:10:34,929 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:13] - [] - [1764:7324]
+2024-12-18 02:10:34,930 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:14] - nom31im5lj4@rteet.com - [1764:7324]
+2024-12-18 02:10:51,735 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [1764:7324]
+2024-12-18 02:10:57,822 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:124] - 
+loginnnnnnn-------------
+ - [1764:7324]
+2024-12-18 02:11:16,192 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:153] - DONEEEEEEE - [1764:7324]
+2024-12-18 02:14:54,128 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:13] - lqrqoqqzy04@rteet.com - [6028:14680]
+2024-12-18 02:15:11,164 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [6028:14680]
+2024-12-18 02:15:17,254 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:124] - 
+loginnnnnnn-------------
+ - [6028:14680]
+2024-12-18 02:15:35,612 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:153] - DONEEEEEEE - [6028:14680]
+2024-12-18 02:19:22,194 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:36] - [{"id":1360834372,"from":"bilgi@voiser.net","subject":"Voiser - Verify Your Account - 4652 - Voiser.net","date":"2024-12-18 01:17:59"}] - [14628:11804]
+2024-12-18 02:19:22,195 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:39] - 4652 - [14628:11804]
+2024-12-18 02:22:25,079 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:33] - 3zgoaa6pa@rteet.com - [10924:6372]
+2024-12-18 02:22:25,367 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:36] - [] - [10924:6372]
+2024-12-18 02:22:25,370 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:39] - None - [10924:6372]
+2024-12-18 02:22:56,222 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:33] - lfc7j10a5s@rteet.com - [18092:17616]
+2024-12-18 02:22:56,525 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:36] - <class 'str'> - [18092:17616]
+2024-12-18 02:22:56,527 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:39] - None - [18092:17616]
+2024-12-18 02:23:10,316 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:33] - ciu8g2u@rteet.com - [14444:9204]
+2024-12-18 02:23:10,597 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:36] - [] - [14444:9204]
+2024-12-18 02:23:10,599 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:39] - None - [14444:9204]
+2024-12-18 02:24:08,983 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:33] - un7xcdblf5i@dpptd.com - [18412:16700]
+2024-12-18 02:24:09,273 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:36] - None - [18412:16700]
+2024-12-18 02:29:11,122 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:13] - 29zkesl703q@dpptd.com - [16180:13576]
+2024-12-18 02:29:28,717 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [16180:13576]
+2024-12-18 02:29:34,804 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:124] - 
+loginnnnnnn-------------
+ - [16180:13576]
+2024-12-18 02:29:53,244 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:153] - DONEEEEEEE - [16180:13576]
+2024-12-18 02:31:40,502 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\main.py:13] - nuksnfv7lih@rteet.com - [12464:8008]
+2024-12-18 02:31:57,917 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:116] - 
+login-------------
+ - [12464:8008]
+2024-12-18 02:32:04,017 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:124] - 
+loginnnnnnn-------------
+ - [12464:8008]
+2024-12-18 02:32:22,377 - automate - [INFO] [C:\Users\Administrator\Desktop\voiser-proj\automate.py:153] - DONEEEEEEE - [12464:8008]
