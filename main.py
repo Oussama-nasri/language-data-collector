@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     #login(selenium,chrome_driver,number_emails,user_name,password)
     selenium.open_text_to_speech_page()
-    selenium.youtube_to_text()
+    selenium.youtube_to_text("hello","Arabic (Tunisia)","Off","Off","Off")
 
     #selenium.close_browser(chrome_driver)
     '''
