@@ -138,13 +138,53 @@ class Selenium:
         
     def open_text_to_speech_page(self):
         self.driver.get("https://voiser.net/account/speech-to-text/")
-        time.sleep(10)
+        time.sleep(5)
     
-    def youtube_to_text(self):
+    def youtube_to_text(self,youtube_url,language_variable,ponctuation_variable,profanity_variable,speaker_variable):
         #select youtube tab
         tab = self.driver.find_element(By.CLASS_NAME, "card-transcribe-youtube")
         tab.click()
-        time.sleep(10)
+        time.sleep(1)
+        #Add youtube link
+        youtube_input = WebDriverWait(self.driver, 2).until(
+            EC.presence_of_element_located((By.ID, "upload_from_youtube"))
+        )
+        youtube_input.send_keys(youtube_url)
+        time.sleep(2)
+        #Change language
+        language_dropbox = self.driver.find_element(By.CLASS_NAME, "select2-selection--single")
+        language_dropbox.click()
+        time.sleep(2)
+        language = WebDriverWait(self.driver, 2).until(EC.element_to_be_clickable((By.XPATH, "//li[contains(., '{}')]".format(language_variable))))
+        language.click()
+        time.sleep(2)
+        #Change ponctuation
+        ponctuation_dropbox = self.driver.find_element(By.ID, "select2-filterPunctuation-container")
+        ponctuation_dropbox.click()
+        time.sleep(2)
+        ponctuation = WebDriverWait(self.driver, 2).until(EC.element_to_be_clickable((By.XPATH, "//li[contains(., 'Punctuation: {}')]".format(ponctuation_variable))))
+        ponctuation.click()
+        time.sleep(2)
+        #Change profanity
+        profanity_dropbox = self.driver.find_element(By.ID, "select2-filterProfanity-container")
+        profanity_dropbox.click()
+        time.sleep(2)
+        profanity = WebDriverWait(self.driver, 2).until(EC.element_to_be_clickable((By.XPATH, "//li[contains(., 'Profanity Filter: {}')]".format(profanity_variable))))
+        profanity.click()
+        time.sleep(2)
+        #Speaker recognition
+        speaker_dropbox = self.driver.find_element(By.ID, "select2-filterSpeaker-container")
+        speaker_dropbox.click()
+        time.sleep(2)
+        speaker = WebDriverWait(self.driver, 2).until(EC.element_to_be_clickable((By.XPATH, "//li[contains(., 'Speaker Recognition {}')]".format(speaker_variable))))
+        speaker.click()
+        time.sleep(2)
+        #Convert audio to txt button
+        button = self.driver.find_element(By.ID, "run_form")
+        button.click()
+        time.sleep(2)
+
+
 
 def initiate_automator():
     # Kill any existing Chrome instances to avoid conflicts
