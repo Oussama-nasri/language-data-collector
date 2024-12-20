@@ -5,12 +5,12 @@ if __name__ == "__main__":
     user_name = "khmais"
     password = "poussword"
     number_emails = 1
-
+    url = "https://www.youtube.com/watch?v=FUKmyRLOlAA"
     selenium,chrome_driver = initiate_automator()
 
     #login(selenium,chrome_driver,number_emails,user_name,password)
-    selenium.open_text_to_speech_page()
-    selenium.youtube_to_text("hello","Arabic (Tunisia)","Off","Off","Off")
+    #selenium.open_text_to_speech_page()
+    selenium.youtube_to_text(url,"Arabic (Tunisia)","Off","Off","Off"," English")
 
     #selenium.close_browser(chrome_driver)
     '''
