@@ -28,11 +28,11 @@ def check_youtube_duration(url):
     else:
         return None
     
-
+def modify_file_name():
+    pass
 
 if __name__ == "__main__":
-        "dur="
-        "approxDurationMs"
+
         urls = [
         "https://www.youtube.com/watch?v=GWERih5c4mM",
         "http://youtube.com/watch?v=-wtIMTCHWuI",
