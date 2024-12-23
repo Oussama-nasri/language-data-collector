@@ -18,6 +18,7 @@ import undetected_chromedriver as uc
 import tempfile
 from selenium.common.exceptions import TimeoutException
 import random
+import subprocess
 
 
 
@@ -90,7 +91,7 @@ class Selenium:
         button = driver.find_element(By.ID, "loginNext")
 
         button.click()
-        time.sleep(7) 
+        time.sleep(10) 
         #To do Catch error later in case of invalid email
         
         #Fill Name
@@ -141,6 +142,9 @@ class Selenium:
     def open_text_to_speech_page(self):
         self.driver.get("https://voiser.net/account/speech-to-text/")
         time.sleep(5)
+        print("----skipping----")
+        self.skip_instruction_panels()
+        print("----skipped----")
     
     def wait_till_ready(self, flag):
         print("---Processing has began---")
@@ -170,30 +174,9 @@ class Selenium:
         return estimation
     
     def skip_instruction_panels(self):
-        panel = self.driver.find_element(By.CLASS_NAME, "introjs-overlay")  # Update with the correct class or ID
-
-        # Get the location and size of the panel
-        panel_location = panel.location  # {'x': x, 'y': y}
-        panel_size = panel.size  # {'width': w, 'height': h}
-
-        # Calculate a random click position outside the panel
-        screen_width = self.driver.execute_script("return window.innerWidth;")
-        screen_height = self.driver.execute_script("return window.innerHeight;")
-
-        # Generate random coordinates outside the panel
-        while True:
-            # Generate a random position outside the panel (ensure not inside the panel)
-            random_x = random.randint(0, screen_width)
-            random_y = random.randint(0, screen_height)
-
-            # Check if the random position is outside the panel's bounding box
-            if (random_x < panel_location['x'] or random_x > panel_location['x'] + panel_size['width']) and \
-            (random_y < panel_location['y'] or random_y > panel_location['y'] + panel_size['height']):
-                break
-
         # Create an ActionChains object and perform a click at the random position
         action = ActionChains(self.driver)
-        action.move_by_offset(random_x, random_y).click().perform()
+        action.move_by_offset(0, 0).click().perform()
 
         # Wait a bit to ensure the click happens
         time.sleep(1)
@@ -223,7 +206,7 @@ class Selenium:
             print(f"Progress: {progress_percentage}%")
             
             # Break the loop if progress reaches 100%
-            if int(progress_percentage) >= 100:
+            if (int(progress_percentage) >= 100) or (int(progress_percentage) == 0):
                 print("Translation complete!")
                 break
             
@@ -231,26 +214,22 @@ class Selenium:
 
     
     def download_text_file(self):
+
         download_button = self.driver.find_element(By.ID, "download-file-button")
         download_button.click()
         text_files = self.driver.find_elements(By.XPATH, "//button[contains(., 'Text File (.txt)')]")
-        print(len(text_files))
 
         for text_file in text_files:
-            print(text_file)
             text_file.click()
             time.sleep(15)
+            download_button.click()
+        download_button.click()
         time.sleep(2)
     
-    def download_text_files(self,languages):
-        downloaded = []
-        download_button = self.driver.find_element(By.ID, "download-file-button")
-        download_button.click()
-        text_files = self.driver.find_elements(By.XPATH, "//button[contains(., 'Text File (.txt)')]")
         
 
     def youtube_to_text(self,youtube_url,language_variable,ponctuation_variable,profanity_variable,speaker_variable,tanslation_language=None):
-        """#select youtube tab
+        #select youtube tab
         tab = self.driver.find_element(By.CLASS_NAME, "card-transcribe-youtube")
         tab.click()
         time.sleep(1)
@@ -294,21 +273,25 @@ class Selenium:
         time.sleep(2)
         #Click on OK button
         estimation = self.click_ok_estimate_duration()
+        time.sleep(5)
         print(estimation)
+        #Skipping 
+        self.skip_instruction_panels()
         #waiting for status complete
         self.wait_till_ready(" Completed")
         time.sleep(2)
+        
         #Get donwload page
-        """
-        """download_link = self.driver.find_element(By.XPATH, "//td[@class='cursor-pointer']/a").get_attribute("href")
-        print(download_link)"""
+        download_page_link = self.driver.find_element(By.XPATH, "//td[@class='cursor-pointer']/a").get_attribute("href")
+        print(download_page_link)
         #Go to the download page
-        download_link = "https://voiser.net/account/speech-to-text/17CV19CJ"
-        self.driver.get(download_link)
+        self.driver.get(download_page_link)
         time.sleep(20)
         #Translate to english
-        """self.translate(tanslation_language)
-        self.progress_bar()"""
+        self.skip_instruction_panels()
+        self.translate(tanslation_language)
+        self.skip_instruction_panels()
+        self.progress_bar()
         self.download_text_file()
         print("120 seconds and closing")
         time.sleep(120)
@@ -320,7 +303,7 @@ class Selenium:
 def initiate_automator():
     # Kill any existing Chrome instances to avoid conflicts
     os.system("taskkill /im chrome.exe /f")
-    # Fetch current user's name
+    """# Fetch current user's name
     user = getpass.getuser()
 
 
@@ -332,20 +315,42 @@ def initiate_automator():
     )
     options.add_argument("--profile-directory=Profile 2")
     options.add_argument("--start-maximized")
-
-    chrome_driver = uc.Chrome(options=options)
+    chrome_driver = webdriver.Chrome(options=options)
     selenium = Selenium(driver=chrome_driver)
-    '''
+    """
+    
+
+    #Set download folder 
+    download_folder = r"C:\Users\Administrator\Desktop\voiser-proj\download\\"
+
+    # Ensure the folder exists
+    if not os.path.exists(download_folder):
+        os.makedirs(download_folder)
+
+    command = f'icacls "{download_folder}" /grant Everyone:F'
+    subprocess.run(command, shell=True)
+
+    prefs = {
+        "download.default_directory": download_folder,
+        "download.prompt_for_download": False,
+        "download.directory_upgrade": True,
+        "savefile.default_directory": download_folder
+    }
+
+    
+    
     options = webdriver.ChromeOptions()
 
     temp_profile = tempfile.mkdtemp()
     options.add_argument(f"--user-data-dir={temp_profile}")
 
+    options.add_experimental_option("prefs", prefs)
+
     
-    chrome_driver = uc.Chrome(options=options)
-    chrome_driver.set_window_size(800,800)
+    chrome_driver = webdriver.Chrome(options=options)
+    chrome_driver.set_window_size(1336,768)
     selenium = Selenium(driver=chrome_driver)
-    '''
+    
     return selenium,chrome_driver
 
 if __name__ == "__main__":
